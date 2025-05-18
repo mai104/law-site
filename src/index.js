@@ -4,10 +4,10 @@ import ReactDOM from "react-dom/client";
 // CSS imports
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./custom.css";
-import "./contact-page.css"; // إضافة CSS لصفحة الاتصال
+import "./contact-page.css";
 
-// JavaScript imports
-import "bootstrap/dist/js/bootstrap.min.js";
+// JavaScript imports - Using bundle instead of separate imports
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // This includes Popper
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
