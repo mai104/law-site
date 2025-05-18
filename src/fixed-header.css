@@ -1,0 +1,67 @@
+/* Header Styles */
+/* إضافة أنماط للهيدر الثابت */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.topbanner.fixed {
+  z-index: 1001;
+}
+
+.navbar.fixed {
+  top: 30px; /* ارتفاع TopBanner */
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* عند التمرير */
+.navbar.scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* للأجهزة المحمولة */
+@media (max-width: 991.98px) {
+  .navbar.fixed {
+    top: 0; /* في الأجهزة المحمولة، TopBanner غير ظاهر */
+  }
+  
+  .content-spacer {
+    height: 60px; /* ارتفاع Navbar فقط للموبايل */
+  }
+}
+
+/* إضافة أنماط للانتقال السلس */
+.slide-down {
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* للتأكد من أن النافبار يظهر بالشكل الصحيح على جميع الأجهزة */
+.navbar-collapse {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* تحسين أنماط لوجو الموقع للهيدر الثابت */
+.navbar-brand {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .navbar-brand {
+  transform: scale(0.9);
+}
