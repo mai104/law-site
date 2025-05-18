@@ -649,6 +649,41 @@ footer .copyright {
 }
 
 /* Media Queries */
+/* Tablet Devices */
+@media (max-width: 991.98px) {
+  .navbar-brand img.logo-image {
+    width: 60px;
+    height: auto;
+  }
+  
+  .navbar-brand img.logo-text {
+    width: 160px;
+    height: auto;
+  }
+  
+  .service-icon-container {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .footer-column {
+    margin-bottom: 2rem;
+  }
+  
+  /* Better section padding on tablets */
+  .featured-services, 
+  .cta-section, 
+  .recommendation, 
+  .services-section {
+    padding: 3rem 0;
+  }
+  
+  /* Adjust hero size */
+  .hero-section {
+    height: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     height: 450px;
@@ -687,25 +722,105 @@ footer .copyright {
   .service-card {
     margin-bottom: 20px;
   }
+  
+  .navbar-collapse {
+    background-color: var(--primary-color);
+    border-radius: 0 0 8px 8px;
+    padding: 1rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .nav-item {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Optimize topbanner for mobile */
+  .topbanner .contact-info {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Better spacing in footer for mobile */
+  footer h6 {
+    margin-top: 1.5rem;
+  }
+  
+  /* Adjust spacing in service cards */
+  .service-card {
+    padding: 1.5rem !important;
+  }
+  
+  /* Make sure buttons are properly sized on mobile */
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Reduce padding in sections */
+  .featured-services, 
+  .cta-section, 
+  .recommendation, 
+  .services-section {
+    padding: 2.5rem 0;
+  }
+  
+  /* Make section headings smaller */
+  h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  h3 {
+    font-size: 1.5rem !important;
+  }
 }
 
-@media (max-width: 576px) {
+/* Small Mobile Devices */
+@media (max-width: 575.98px) {
   .hero-section {
-    height: 350px;
+    height: 340px;
   }
 
   .text-container {
-    margin-top: 1rem;
+    margin: 0.5rem !important;
+    padding: 0.5rem !important;
+    text-align: center;
   }
-
+  
   .text-1 {
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
   }
-
+  
   .text-2 {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
-
+  
+  .text-3 {
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+    max-width: 100%;
+    border-left: none;
+    border-top: 2px solid var(--secondary-color);
+    padding: 0.5rem 0 0 0;
+  }
+  
+  [dir="rtl"] .text-3 {
+    border-right: none;
+    border-top: 2px solid var(--secondary-color);
+    padding: 0.5rem 0 0 0;
+  }
+  
+  .navbar-brand img.logo-image {
+    width: 40px;
+    height: auto;
+  }
+  
+  .navbar-brand img.logo-text {
+    width: 120px;
+    height: auto;
+  }
+  
   .mobile-btn button {
     font-size: 0.8rem;
     padding: 0.25rem 0.5rem !important;
@@ -721,5 +836,122 @@ footer .copyright {
   
   .error-message {
     font-size: 1.5rem;
+  }
+  
+  /* Mobile optimizations */
+  .square {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-content {
+    padding: 1.5rem !important;
+  }
+  
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Optimize section spacing */
+  .featured-services, 
+  .cta-section, 
+  .recommendation, 
+  .services-section {
+    padding: 2rem 0;
+  }
+  
+  /* Make headings even smaller on mobile */
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  /* Ensure buttons are properly sized on small screens */
+  .btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Center align section titles on mobile */
+  .section-title, .guide-text {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Adjust list items for better mobile display */
+  .my-list li {
+    padding: 0.6rem 0;
+    padding-left: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  [dir="rtl"] .my-list li {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  
+  /* Make contact information more prominent */
+  .contact-info a {
+    font-size: 1rem;
+    padding: 0.3rem 0;
+    display: block;
+  }
+  
+  /* Optimize call-to-action for mobile */
+  .cta-content h2 {
+    font-size: 1.3rem !important;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem;
+  }
+  
+  /* Enable touch-friendly clickable areas */
+  .nav-item a, 
+  footer a, 
+  .topbanner a {
+    padding: 0.5rem;
+    display: inline-block;
+  }
+  
+  /* Make sure all interactive elements have adequate spacing */
+  .service-card, 
+  .card, 
+  .btn, 
+  .nav-item a, 
+  footer a {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Fix column and row spacing in grid layouts */
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, 
+  .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, 
+  .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, 
+  .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, 
+  .col-sm-10, .col-sm-11, .col-sm-12 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
